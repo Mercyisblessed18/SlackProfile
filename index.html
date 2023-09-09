@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>My Webpage</title>
+	
+<style>
+img{border-radius:100%;margin-bottom:-25px;}
+.track{margin-top: -10px;}
+h1{margin-top: -5px;}
+p{margin-top:-17px;font-size:28px;font-weight:bold;display:inline-block;}
+a{display:block;}
+</style>
+
+</head>
+<body>
+  <img src="slack.jpg" data-testid="slackDisplayImage" alt="Olagunju Anuoluwa Blessing" width="100px">
+  <h2 data data-testid=slackUsername>Olagunju Anuoluwa Blessing </h2>
+  <h2 class="track" data-testid="myTrack">Track: Frontend</h2>
+
+    <h1 id="current-time" data-testid="currentUTCTime"></h1>
+      <p id="current-day" data-testid="currentDayOfTheWeek"></p>
+    
+
+  <script>
+  
+  const weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday',];
+  const d = new Date ();
+  let day = weekday [d.getDay()];
+  document.getElementById("current-day").
+  innerHTML = day;
+  
+  let time = document.getElementById('current-time');
+  setInterval(()=>{
+    let d = new Date();
+  time.innerHTML= d.toLocaleTimeString();
+  },)
+  
+  
+</script> 
+  <a href="" target="_blank" data-testid="githubURL"> Click here to visit GitHub </a>
+   
+  </body>
+  </html>
+  
+  
